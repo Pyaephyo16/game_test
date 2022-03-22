@@ -16,8 +16,8 @@ class _DiceGameState extends State<DiceGame> {
   
 
   String? error;
-  int diceOne = 5;
-  int diceTwo = 6;
+  int diceOne = 1;
+  int diceTwo = 1;
 
   final TextEditingController _diceController = TextEditingController();
 
@@ -25,7 +25,7 @@ class _DiceGameState extends State<DiceGame> {
                               borderSide: BorderSide(color: Colors.transparent),
                             );
 
-
+///Spot
   Widget diceView(){
       return Container(
         margin: EdgeInsets.all(6),
@@ -39,7 +39,7 @@ class _DiceGameState extends State<DiceGame> {
   }
 
   Widget getDice(int count){
-    return Stack(
+           return Stack(
                       alignment: Alignment.center,
                       children: [
                         Container(
